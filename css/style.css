@@ -1,0 +1,483 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+/* html {
+} */
+
+body {
+    padding: 1vw 0 0 1vw;
+    font-family: 'Montserrat-Regular';
+    background-color: #f1f1f1;
+    /* font-size: 15px; */
+    font-size: calc(10px + 5 * (100vw - 320px) / 1600);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: max-content 2fr;
+}
+
+.logo {
+    /* background-color: #777; */
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    font-family: 'Montserrat-SemiBold';
+    text-transform: uppercase;
+    /* background-color: orange; */
+}
+
+.logo_img {
+    margin-right: 0.5vw;
+}
+
+.logo_text_left {
+    color: #000000;
+}
+
+.logo_text_right {
+    color: #f70209;
+}
+
+.header_nav {
+    /* background-color: #999; */
+}
+
+.header_nav_list {
+    padding: 0.9vw 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat-SemiBold';
+    /* background-color: aqua; */
+}
+
+/* Главный контент */
+
+.main {
+    padding: 2.5vw 0 4.5vw 0;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main_title {
+    /* font-size: 20px; */
+    font-family: 'Montserrat-SemiBold';
+    font-size: calc(12px + 8 * (100vw - 320px) / 1600);
+}
+
+.section {
+    margin-top: 4vw;
+}
+
+/* Секция "Состав работ" */
+
+.section.scope_work,
+.section.object_parameters,
+.section.additional_factors,
+.section.instrumental_tests {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    align-items: flex-start;
+    column-gap: 3vw;
+}
+
+.section_title {
+    overflow: hidden;
+    /* font-size: 17px; */
+    font-family: 'Montserrat-SemiBold';
+    font-size: calc(9px + 8 * (100vw - 320px) / 1600);
+    /* background-color: red; */
+}
+
+.section_title::after {
+    content: '';
+    /* делаем линию строчно-блочной */
+    display: inline-block;
+    /* выравниваем вертикально по середине */
+    vertical-align: middle;
+    /* установка ширины в 100% делает линию равной ширине тега заголовка
+	** благодаря этому линия заполнит все свободное пространство
+	** слева и справа от текста
+	*/
+    width: 100%;
+    /* height: 0.15vw; */
+    height: 1.5px;
+    background-color: #000000;
+    border-width: 0 1vw;
+    margin-left: 0.5vw;
+}
+
+.section_title:after {
+    /* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
+	** благодаря этому линия встает справа от текста
+	*/
+    margin-right: -100%;
+}
+
+.section_column.scope_work {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_column.scope_work > * {
+    margin-bottom: 1vw;
+}
+
+.block_checkbox {
+    width: max-content;
+    padding: 0.8vw;
+    border-radius: 1vw;
+    background-color: #f1f1f1;
+}
+
+.block_checkbox input[type='checkbox'] {
+}
+
+.labl_checkbox {
+    /* width: max-content; */
+    padding: 0.8vw;
+    display: flex;
+    align-items: center;
+    column-gap: 1vw;
+    border-radius: 1vw;
+    overflow-wrap: break-word;
+    background-color: #f1f1f1;
+}
+
+.hidden_checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.labl_checkbox .checkbox {
+    padding: 0.9vw;
+    position: relative;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.labl_checkbox .checkbox .checkmark {
+    padding: 0.55vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.labl_checkbox input:checked + .checkbox .checkmark {
+    background-color: #666666;
+}
+
+.question_mark {
+    margin-left: 0.5vw;
+}
+
+/* Секция "Параметры объекта 1" */
+
+.section.object_parameters .section_title {
+    padding: 1vw 0;
+}
+
+.section_column.object_parameters_1 > * {
+    margin-bottom: 1vw;
+}
+
+.section_row {
+    display: flex;
+    align-items: center;
+    column-gap: 2vw;
+}
+
+.section_row > * {
+    flex-basis: 32%;
+}
+
+.inpt_data {
+    padding: 1vw;
+    outline: none;
+    border-radius: 1vw;
+    background-color: #f1f1f1;
+}
+
+.list_filters {
+    display: flex;
+    column-gap: 1vw;
+}
+
+.filter_switch_item {
+    /* padding: 1vw 1.5vw; */
+    padding: 0.8vw 1.3vw;
+    text-align: center;
+    border-radius: 1vw;
+    white-space: nowrap;
+    background-color: #f1f1f1;
+}
+
+.filter_switch_labl {
+}
+
+.filter_switch_item input {
+    display: none;
+}
+
+/* Секция "Параметры объекта 2" */
+
+.section_column.object_parameters_2 {
+    /* max-width: 90%;
+    width: 100%; */
+    display: grid;
+    /* grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column; */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-auto-rows: 1fr; */
+    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
+    column-gap: 3vw;
+}
+
+.section_column.object_parameters_2 .section_column p {
+    font-family: 'Montserrat-SemiBold';
+    margin-bottom: 1.5vw;
+    /* max-width: 315px;
+    width: 100%;
+    word-wrap: break-word; */
+}
+
+.section_column_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+}
+
+.section_column_content > * {
+    width: 100%;
+    /* margin-top: 2vw; */
+}
+
+/* Секция "Дополнительные факторы" */
+
+.section_column.additional_factors .section_top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5vw;
+}
+
+.section_column.additional_factors > * {
+    /* overflow: hidden; */
+}
+
+.section_column.additional_factors .section_top .section_column:first-child {
+    display: grid;
+    grid-auto-rows: 1fr;
+    align-items: center;
+    row-gap: 1vw;
+}
+
+.section_column.additional_factors .section_top .section_column:first-child > * {
+    width: 100%;
+}
+
+.section_column.additional_factors .section_top .section_column:last-child {
+    display: grid;
+    align-items: center;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+        '...'
+        '...'
+        '...'
+        '...'
+        '...'
+        '...'
+        '...'
+        '...'
+        '...'
+        '...'
+        'row11'
+        'row12'
+        '...'
+        '...'
+        '...'
+        '...';
+}
+
+.section_column.additional_factors .section_top .section_column:last-child .list_filters:first-child {
+    grid-area: row11;
+}
+
+.section_column.additional_factors .section_top .section_column:last-child .list_filters:last-child {
+    grid-area: row12;
+}
+
+.section_column.additional_factors .section_bottom .list_inpt_data {
+    width: max-content;
+    margin-top: 3vw;
+}
+
+.section_column.additional_factors .section_bottom .list_inpt_data > * {
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5vw;
+}
+
+.section_column.additional_factors .section_bottom .list_inpt_data li .inpt_data {
+    background-color: #f1f1f1;
+}
+
+.section_column.additional_factors .section_bottom .list_inpt_data li .inpt_data::-webkit-input-placeholder {
+    font-family: 'Montserrat-Regular';
+}
+
+.block_checkbox_inner {
+    display: flex;
+}
+
+/* Секция "Инструментальные испытания" */
+
+.section_column.instrumental_tests {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4vw;
+}
+
+.item_inpt_data label {
+    font-family: 'Montserrat-SemiBold';
+}
+
+.section_column_content h3 {
+    margin-bottom: 1.5vw;
+    font-family: 'Montserrat-SemiBold';
+}
+
+.section_column.instrumental_tests .section_column:first-child .section_column_content:last-child label {
+    font-family: 'Montserrat-SemiBold';
+}
+
+.section_column.instrumental_tests .block_inpt_data > * {
+    margin-bottom: 1.2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4vw;
+}
+
+.section_column.instrumental_tests .section_column:first-child .section_column_content:nth-child(1),
+.section_column.instrumental_tests .section_column:first-child .section_column_content:nth-child(2),
+.section_column.instrumental_tests .section_column:first-child .section_column_content:nth-child(3),
+.section_column.instrumental_tests .section_column:first-child .section_column_content:nth-child(4),
+.section_column.instrumental_tests .section_column:first-child .section_column_content:nth-child(5),
+.section_column.instrumental_tests .section_column:last-child .section_column_content:nth-child(1),
+.section_column.instrumental_tests .section_column:last-child .section_column_content:nth-child(2),
+.section_column.instrumental_tests .section_column:last-child .section_column_content:nth-child(3),
+.section_column.instrumental_tests .section_column:last-child .section_column_content:nth-child(4) {
+    margin-bottom: 2.5vw;
+}
+
+/* Подвал */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer_left {
+    padding: 2vw;
+    /* background-color: aquamarine; */
+}
+
+.footer_left_content {
+}
+
+.list_inpt_data > * {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2vw;
+}
+
+.list_inpt_data > *:not(:last-child) {
+    margin-bottom: 1vw;
+}
+
+.list_inpt_data li label {
+    color: #000000;
+}
+
+.list_inpt_data li .inpt_data {
+    font-family: 'Montserrat-SemiBold';
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.list_inpt_data li .inpt_data::-webkit-input-placeholder {
+    font-family: 'Montserrat-SemiBold';
+    color: #000000;
+}
+
+.footer_right {
+    padding: 2vw;
+    border-radius: 1vw;
+    background-color: #666666;
+}
+
+.footer_right_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: orange; */
+}
+
+.footer_right_content > * {
+    width: max-content;
+}
+
+.footer_row_title {
+    margin-bottom: 1vw;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5vw;
+}
+
+.footer_subtitle,
+.footer_main_title {
+    color: #ffffff;
+}
+
+.footer_subtitle {
+    /* font-size: 20px; */
+    font-size: calc(12px + 8 * (100vw - 320px) / 1600);
+}
+
+.footer_main_title {
+    /* font-size: 35px; */
+    font-family: 'Montserrat-Bold';
+    font-size: calc(18px + 17 * (100vw - 320px) / 1600);
+}
+
+.btn_download_estimate {
+    padding: 0.8vw 2.5vw;
+    border-radius: 1.5vw;
+    background-color: #ffffff;
+    /* background-color: green; */
+}
+
+.ic_btn {
+    margin-left: 0.3vw;
+}

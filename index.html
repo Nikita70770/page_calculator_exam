@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="left_column">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo_32px.svg" alt="Logo" class="logo_img" />
+                        <span class="logo_text_left">моспроект</span><span class="logo_text_right">комплекс</span>
+                    </a>
+                </div>
+                <p>Обследование</p>
+            </div>
+            <div class="right_column">
+                <header class="header">
+                    <nav class="header_nav">
+                        <ul class="header_nav_list">
+                            <li><a href="#">Товары</a></li>
+                            <li><a href="#">Калькулятор</a></li>
+                            <li><a href="#">Объекты</a></li>
+                            <li><a href="#">Обучение</a></li>
+                            <li><a href="#">Полезные материалы</a></li>
+                            <li><a href="#">Материалы о компании</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <main class="main">
+                    <div class="container">
+                        <h1 class="main_title">Калькулятор по обследованию</h1>
+                        <!-- Секция "Состав работ" -->
+                        <section class="section scope_work">
+                            <h2 class="section_title">Состав работ</h2>
+                            <div class="section_column scope_work">
+                                <label class="labl_checkbox">
+                                    <input type="checkbox" class="hidden_checkbox" />
+                                    <div class="checkbox">
+                                        <div class="checkmark"></div>
+                                    </div>
+                                    Обследование конструкций
+                                </label>
+                                <label class="labl_checkbox">
+                                    <input type="checkbox" class="hidden_checkbox" />
+                                    <div class="checkbox">
+                                        <div class="checkmark"></div>
+                                    </div>
+                                    Обмерные работы конструкций
+                                </label>
+                                <label class="labl_checkbox">
+                                    <input type="checkbox" class="hidden_checkbox" />
+                                    <div class="checkbox">
+                                        <div class="checkmark"></div>
+                                    </div>
+                                    Поверочный расчет несущей способности
+                                </label>
+                                <label class="labl_checkbox">
+                                    <input type="checkbox" class="hidden_checkbox" />
+                                    <div class="checkbox">
+                                        <div class="checkmark"></div>
+                                    </div>
+                                    Обследование инженерных систем
+                                </label>
+                            </div>
+                        </section>
+                        <!-- Секция "Параметры объекта 1" -->
+                        <section class="section object_parameters">
+                            <h2 class="section_title">Параметры объекта</h2>
+                            <div class="section_column object_parameters_1">
+                                <div class="section_row">
+                                    <label
+                                        >Строительный объем, м<sup><small>3</small></sup>
+                                        <sup class="question_mark">
+                                            <img src="/img/question_mark.svg" />
+                                        </sup>
+                                    </label>
+                                    <input class="inpt_data" type="text" placeholder="0" />
+                                </div>
+                                <div class="section_row">
+                                    <label
+                                        >Количество этажей
+                                        <sup class="question_mark">
+                                            <img src="/img/question_mark.svg" />
+                                        </sup>
+                                    </label>
+                                    <input class="inpt_data" type="text" placeholder="0" />
+                                </div>
+                                <div class="section_row">
+                                    <label>Назначение </label>
+                                    <ul class="list_filters">
+                                        <li class="filter_switch_item">
+                                            <input type="checkbox" id="checkbox_elem" checked />
+                                            <label for="checkbox_elem" class="filter_switch_labl"> Гражданское </label>
+                                        </li>
+                                        <li class="filter_switch_item">
+                                            <input type="checkbox" id="checkbox_elem" />
+                                            <label for="checkbox_elem" class="filter_switch_labl"> Промышленное </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="section_row">
+                                    <label
+                                        >Конструктивная схема
+                                        <sup class="question_mark"><img src="/img/question_mark.svg" /></sup>
+                                    </label>
+                                    <ul class="list_filters">
+                                        <li class="filter_switch_item">
+                                            <input type="checkbox" id="checkbox_elem" checked />
+                                            <label for="checkbox_elem" class="filter_switch_labl"> Каркасная </label>
+                                        </li>
+                                        <li class="filter_switch_item">
+                                            <input type="checkbox" id="checkbox_elem" />
+                                            <label for="checkbox_elem" class="filter_switch_labl"> Стеновая </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="section_row">
+                                    <label
+                                        >Категория сложности объекта
+                                        <sup class="question_mark"><img src="/img/question_mark.svg" /></sup>
+                                    </label>
+                                    <ul class="list_filters">
+                                        <li class="filter_switch_item">
+                                            <input type="checkbox" id="checkbox_elem" checked />
+                                            <label for="checkbox_elem" class="filter_switch_labl"> I </label>
+                                        </li>
+                                        <li class="filter_switch_item">
+                                            <input type="checkbox" id="checkbox_elem" checked />
+                                            <label for="checkbox_elem" class="filter_switch_labl"> II </label>
+                                        </li>
+                                        <li class="filter_switch_item">
+                                            <input type="checkbox" id="checkbox_elem" checked />
+                                            <label for="checkbox_elem" class="filter_switch_labl"> III </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="section_row">
+                                    <label
+                                        >Категория сложности обследования
+                                        <sup class="question_mark"><img src="/img/question_mark.svg" /></sup>
+                                    </label>
+                                    <ul class="list_filters">
+                                        <li class="filter_switch_item">
+                                            <input type="checkbox" id="checkbox_elem" checked />
+                                            <label for="checkbox_elem" class="filter_switch_labl"> I </label>
+                                        </li>
+                                        <li class="filter_switch_item">
+                                            <input type="checkbox" id="checkbox_elem" checked />
+                                            <label for="checkbox_elem" class="filter_switch_labl"> II </label>
+                                        </li>
+                                        <li class="filter_switch_item">
+                                            <input type="checkbox" id="checkbox_elem" checked />
+                                            <label for="checkbox_elem" class="filter_switch_labl"> III </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="section_row">
+                                    <label
+                                        >Категория сложности обмерных работ
+                                        <sup class="question_mark"><img src="/img/question_mark.svg" /></sup>
+                                    </label>
+                                    <ul class="list_filters">
+                                        <li class="filter_switch_item">
+                                            <input type="checkbox" id="checkbox_elem" checked />
+                                            <label for="checkbox_elem" class="filter_switch_labl"> I </label>
+                                        </li>
+                                        <li class="filter_switch_item">
+                                            <input type="checkbox" id="checkbox_elem" checked />
+                                            <label for="checkbox_elem" class="filter_switch_labl"> II </label>
+                                        </li>
+                                        <li class="filter_switch_item">
+                                            <input type="checkbox" id="checkbox_elem" checked />
+                                            <label for="checkbox_elem" class="filter_switch_labl"> III </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Секция "Параметры объекта 2" -->
+                        <section class="section object_parameters">
+                            <h2 class="section_title">Параметры объекта</h2>
+                            <div class="section_column object_parameters_2">
+                                <div class="section_column">
+                                    <p>Обследование строительных конструкций</p>
+                                    <div class="section_column_content">
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Выбрать всё
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Фундаменты
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Стены, перегородки, фасады
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Полы
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Колонны
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Лестницы
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Подкрановые конструкции
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Перекрытия
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Несущие конструктивные покрытия
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Ограждающие конструкции покрытия
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Совмещенные покрытия или крыши
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Кровля
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="section_column">
+                                    <p>Обмерные работы строительных конструкций</p>
+                                    <div class="section_column_content">
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Выбрать всё
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Фундаменты
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Поэтажные планы
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Колонны, связи, подкровные конструкции с узлами
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Полы
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Разрезы
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Фасады
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Колонны и стойки
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Лестницы
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Подкрановые конструкции
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Перекрытия со вскрытиями
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Несущие конструкции покрытия
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Ограждающие конструкции покрытия
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Стропильные конструкции
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Крыши
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Кровля
+                                        </label>
+                                        <div class="block_filters">
+                                            <label>Имеются ли исходные чертежи?</label>
+                                            <ul class="list_filters" style="margin-top: 1vw">
+                                                <li class="filter_switch_item">
+                                                    <input type="checkbox" id="checkbox_elem" checked />
+                                                    <label for="checkbox_elem" class="filter_switch_labl"> Да </label>
+                                                </li>
+                                                <li class="filter_switch_item">
+                                                    <input type="checkbox" id="checkbox_elem" checked />
+                                                    <label for="checkbox_elem" class="filter_switch_labl"> Нет </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section_column">
+                                    <p>Обследование инженерных систем</p>
+                                    <div class="section_column_content">
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Выбрать всё
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Горячее водоснабжение
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Отопление
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Холодное водоснабжение и канализация
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Вентиляция и кондиционирование
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Мусороудаление
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Газоснабжение
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Водосток
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Электросети и средства связи
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Противопожарные системы
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Секция "Дополнительные факторы" -->
+                        <section class="section additional_factors">
+                            <h2 class="section_title">Дополнительные факторы</h2>
+                            <div class="section_column additional_factors">
+                                <div class="section_top">
+                                    <div class="section_column">
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Сложные геологические условия
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Объект – памятник культурного наследия
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Захламленность, стесненность помещений
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Дополнительная безопасность (страховки, леса)
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Цеха с вредным производством, вибрациями, шумом
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Имеются ранее усиленные конструкции
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Работа в холодный период года (20 октября – 5 мая для Москвы)
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Стальные конструкции с заклепочными соединениями
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Объекты со специальным режимом
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Последующая экспертиза результатов обследования
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Сейсмичность района обследования
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Цеха с агрессивным воздействием окружающей среды
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Объект – памятник культурного наследия
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Шаг конструкций < 6 м
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Промышленное здание: пролеты > 12 м, высота этажа > 6 м
+                                        </label>
+                                        <label class="labl_checkbox">
+                                            <input type="checkbox" class="hidden_checkbox" />
+                                            <div class="checkbox">
+                                                <div class="checkmark"></div>
+                                            </div>
+                                            Смета на ремонтно-восстановительные работы
+                                        </label>
+                                    </div>
+                                    <div class="section_column">
+                                        <ul class="list_filters">
+                                            <li class="filter_switch_item">
+                                                <input type="checkbox" id="checkbox_elem" />
+                                                <label for="checkbox_elem" class="filter_switch_labl">< 7 баллов</label>
+                                            </li>
+                                            <li class="filter_switch_item">
+                                                <input type="checkbox" id="checkbox_elem" />
+                                                <label for="checkbox_elem" class="filter_switch_labl">7 баллов</label>
+                                            </li>
+                                            <li class="filter_switch_item">
+                                                <input type="checkbox" id="checkbox_elem" />
+                                                <label for="checkbox_elem" class="filter_switch_labl">8 баллов</label>
+                                            </li>
+                                            <li class="filter_switch_item">
+                                                <input type="checkbox" id="checkbox_elem" />
+                                                <label for="checkbox_elem" class="filter_switch_labl">9 баллов</label>
+                                            </li>
+                                        </ul>
+                                        <ul class="list_filters">
+                                            <li class="filter_switch_item">
+                                                <input type="checkbox" id="checkbox_elem" />
+                                                <label for="checkbox_elem" class="filter_switch_labl"
+                                                    >отсутствует</label
+                                                >
+                                            </li>
+                                            <li class="filter_switch_item">
+                                                <input type="checkbox" id="checkbox_elem" />
+                                                <label for="checkbox_elem" class="filter_switch_labl">слабая</label>
+                                            </li>
+                                            <li class="filter_switch_item">
+                                                <input type="checkbox" id="checkbox_elem" />
+                                                <label for="checkbox_elem" class="filter_switch_labl">средняя</label>
+                                            </li>
+                                            <li class="filter_switch_item">
+                                                <input type="checkbox" id="checkbox_elem" />
+                                                <label for="checkbox_elem" class="filter_switch_labl">сильная</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section_bottom">
+                                    <ul class="list_inpt_data">
+                                        <li>
+                                            <label for="">Спец. техника</label
+                                            ><input type="text" class="inpt_data" placeholder="Кол-во дней" />
+                                        </li>
+                                        <li>
+                                            <label for="">Транспортные расходы</label
+                                            ><input type="text" class="inpt_data" placeholder="Расстояние от МКАД" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Секция "Инструментальные испытания" -->
+                        <section class="section instrumental_tests">
+                            <h2 class="section_title">Инструментальные испытания</h2>
+                            <div class="section_column instrumental_tests">
+                                <div class="section_column">
+                                    <div class="section_column_content">
+                                        <h3>Обследование фундаментов</h3>
+                                        <ul class="block_inpt_data">
+                                            <li>
+                                                <label>Количество шурфов</label>
+                                                <input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li>
+                                                <label>Сейсмоакустическое обследование</label
+                                                ><input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="section_column_content">
+                                        <h3>Прочность бетона</h3>
+                                        <ul class="block_inpt_data">
+                                            <li>
+                                                <label>Отрыв со скалыванием</label>
+                                                <input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li>
+                                                <label>Ультразвук</label
+                                                ><input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li>
+                                                <label>Ударный импульс</label>
+                                                <input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li>
+                                                <label>Лаборатория</label
+                                                ><input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="section_column_content">
+                                        <h3>Прочность кирпича</h3>
+                                        <ul class="block_inpt_data">
+                                            <li>
+                                                <label
+                                                    >Ультразвук<sup style="margin-left: 0.8vw"
+                                                        ><small>ориентировочно</small></sup
+                                                    ></label
+                                                >
+                                                <input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li>
+                                                <label
+                                                    >Ударный импульс<sup style="margin-left: 0.8vw"
+                                                        ><small>ориентировочно</small></sup
+                                                    ></label
+                                                ><input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li>
+                                                <label>Лаборатория</label>
+                                                <input type="data" class="inpt_data" placeholder=": 10 шт." />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="section_column_content">
+                                        <h3>Прочность раствора</h3>
+                                        <ul class="block_inpt_data">
+                                            <li>
+                                                <label
+                                                    >Ультразвук
+                                                    <sup style="margin-left: 0.8vw"
+                                                        ><small>ориентировочно</small></sup
+                                                    ></label
+                                                >
+                                                <input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li>
+                                                <label
+                                                    >Ударный импульс<sup style="margin-left: 0.8vw"
+                                                        ><small>ориентировочно</small></sup
+                                                    ></label
+                                                >
+                                                <input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li>
+                                                <label>Лаборатория</label>
+                                                <input type="data" class="inpt_data" placeholder=": 10 шт." />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="section_column_content">
+                                        <ul class="block_inpt_data">
+                                            <li>
+                                                <label>Выброакустичесике исследования</label>
+                                                <input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section_column">
+                                    <div class="section_column_content">
+                                        <h3>Испытания бетона</h3>
+                                        <ul class="block_inpt_data">
+                                            <li>
+                                                <label>Карбонизация</label>
+                                                <input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li>
+                                                <label>Защитный слой (магнитный метод)</label>
+                                                <input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li>
+                                                <label>Георадиолокация</label>
+                                                <input type="data" class="inpt_data" placeholder="0 п.м." />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="section_column_content">
+                                        <ul class="block_inpt_data">
+                                            <li class="item_inpt_data">
+                                                <label>Вскрытия конструкций</label>
+                                                <input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li class="item_inpt_data">
+                                                <label>Заделка вскрытий</label>
+                                                <input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li class="item_inpt_data">
+                                                <label
+                                                    >Поиск скрытых дефектов
+                                                    <sup style="margin-left: 0.8vw"
+                                                        ><small>доп. георадиолокация</small></sup
+                                                    >
+                                                </label>
+                                                <input type="data" class="inpt_data" placeholder="0 п.м." />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="section_column_content">
+                                        <h3>Испытания стали</h3>
+                                        <ul class="block_inpt_data">
+                                            <li>
+                                                <label>Испытания на расстяжение</label>
+                                                <input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li>
+                                                <label>Химический анализ</label
+                                                ><input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li>
+                                                <label>Томография</label>
+                                                <input type="data" class="inpt_data" placeholder="0 п.м." />
+                                            </li>
+                                            <li>
+                                                <label>Проверка болтовых соединений</label
+                                                ><input type="data" class="inpt_data" placeholder="0 п.м." />
+                                            </li>
+                                            <li>
+                                                <label>Твердометрия</label
+                                                ><input type="data" class="inpt_data" placeholder="0 п.м." />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="section_column_content">
+                                        <h3>Испытания древесины</h3>
+                                        <ul class="block_inpt_data">
+                                            <li>
+                                                <label>Влажность</label>
+                                                <input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                            <li>
+                                                <label>Микология</label
+                                                ><input type="data" class="inpt_data" placeholder="0 шт." />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+                <!-- Подвал -->
+                <footer class="footer">
+                    <div class="footer_left">
+                        <div class="footer_left_content">
+                            <ul class="list_inpt_data">
+                                <li>
+                                    <label for="">Стоимость обследования строительных конструкций</label
+                                    ><input type="text" class="inpt_data" placeholder="180 500 Р" />
+                                </li>
+                                <li>
+                                    <label for="">Стоимость обмерных работ</label
+                                    ><input type="text" class="inpt_data" placeholder="180 500 Р" />
+                                </li>
+                                <li>
+                                    <label for="">Стоимость обследования инженерных систем</label
+                                    ><input type="text" class="inpt_data" placeholder="180 500 Р" />
+                                </li>
+                                <li>
+                                    <label for="">Стоимость инструментальных испытаний</label
+                                    ><input type="text" class="inpt_data" placeholder="180 500 Р" />
+                                </li>
+                                <li>
+                                    <label for="">Стоимость дополнительных расходов</label
+                                    ><input type="text" class="inpt_data" placeholder="180 500 Р" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_right">
+                        <div class="footer_right_content">
+                            <div class="footer_right_title">
+                                <div class="footer_row_title">
+                                    <h2 class="footer_subtitle">Общая стоимость</h2>
+                                    <img src="/img/ic_copy.svg" alt="Copy" />
+                                </div>
+                                <h3 class="footer_main_title">180 500 Р</h3>
+                            </div>
+                            <button class="btn_download_estimate">
+                                Скачать смету
+                                <img class="ic_btn" src="/img/arrow_down.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
