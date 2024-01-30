@@ -1,20 +1,18 @@
-//
+// Фильтры 'Назначение'
 const filters_appointment = document.querySelectorAll('.appointment > *');
-//
+// Фильтры 'Конструктивная схема'
 const filters_design_scheme = document.querySelectorAll('.design_scheme > *');
-//
+// Фильтры 'Категория сложности объекта'
 const filters_complexity_obj = document.querySelectorAll('.complexity_obj > *');
-//
+// Фильтры 'Категория сложности обследования'
 const filters_complexity_survey = document.querySelectorAll('.complexity_survey > *');
-//
+// Фильтры 'Категория сложности обмерных работ'
 const filters_complexity_works = document.querySelectorAll('.complexity_works > *');
-//
+// Фильтры 'Исходные чертежи'
 const filters_original_drawings = document.querySelectorAll('.original_drawings > *');
-
-//
+// Фильтры 'Сейсмичность района обследования'
 const filters_seismicity_area = document.querySelectorAll('.seismicity_area > *');
-
-//
+// Фильтры 'Цеха с агрессивным воздействием окружающей среды'
 const filters_aggressiveness = document.querySelectorAll('.aggressiveness > *');
 
 //
@@ -32,7 +30,7 @@ const cb_select_all_3 = engineering_systems[0];
 const btn_download_estimate = document.querySelector('.btn_download_estimate');
 const sub_menu = document.querySelector('.sub_menu');
 
-//
+// Добавление обработчика события 'change'
 filters_appointment.forEach(function (item_list) {
     item_list.querySelector('input[type=checkbox]').addEventListener('change', function (e) {
         for (item of filters_appointment) {
@@ -43,7 +41,7 @@ filters_appointment.forEach(function (item_list) {
     });
 });
 
-//
+// Добавление обработчика события 'change'
 filters_design_scheme.forEach(function (item_list) {
     item_list.querySelector('input[type=checkbox]').addEventListener('change', function (e) {
         for (item of filters_design_scheme) {
@@ -54,7 +52,7 @@ filters_design_scheme.forEach(function (item_list) {
     });
 });
 
-//
+// Добавление обработчика события 'change'
 filters_complexity_obj.forEach(function (item_list) {
     item_list.querySelector('input[type=checkbox]').addEventListener('change', function (e) {
         for (item of filters_complexity_obj) {
@@ -65,6 +63,7 @@ filters_complexity_obj.forEach(function (item_list) {
     });
 });
 
+// Добавление обработчика события 'change'
 filters_complexity_survey.forEach(function (item_list) {
     item_list.querySelector('input[type=checkbox]').addEventListener('change', function (e) {
         for (item of filters_complexity_survey) {
@@ -75,7 +74,7 @@ filters_complexity_survey.forEach(function (item_list) {
     });
 });
 
-//
+// Добавление обработчика события 'change'
 filters_complexity_works.forEach(function (item_list) {
     item_list.querySelector('input[type=checkbox]').addEventListener('change', function (e) {
         for (item of filters_complexity_works) {
@@ -86,7 +85,7 @@ filters_complexity_works.forEach(function (item_list) {
     });
 });
 
-//
+// Добавление обработчика события 'change'
 filters_original_drawings.forEach(function (item_list) {
     item_list.querySelector('input[type=checkbox]').addEventListener('change', function (e) {
         for (item of filters_original_drawings) {
@@ -97,7 +96,7 @@ filters_original_drawings.forEach(function (item_list) {
     });
 });
 
-//
+// Добавление обработчика события 'change'
 filters_seismicity_area.forEach(function (item_list) {
     item_list.querySelector('input[type=checkbox]').addEventListener('change', function (e) {
         for (item of filters_seismicity_area) {
@@ -108,7 +107,7 @@ filters_seismicity_area.forEach(function (item_list) {
     });
 });
 
-//
+// Добавление обработчика события 'change'
 filters_aggressiveness.forEach(function (item_list) {
     item_list.querySelector('input[type=checkbox]').addEventListener('change', function (e) {
         for (item of filters_aggressiveness) {

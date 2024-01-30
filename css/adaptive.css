@@ -1,0 +1,17 @@
+@media (max-width: 1400px) {
+    .section.scope_work,
+    .section.object_parameters,
+    .section.additional_factors,
+    .section.instrumental_tests {
+        display: block;
+    }
+
+    .section.scope_work .section_title,
+    .section.object_parameters .section_title,
+    .section.additional_factors .section_title,
+    .section.instrumental_tests .section_title {
+        max-width: 275px;
+        width: 100%;
+        margin-bottom: 2.5vw;
+    }
+}

@@ -1,11 +1,8 @@
 @import url(reset.css);
 @import url(fonts.css);
 
-/* html {
-} */
-
 body {
-    padding: 1vw 0 0 1vw;
+    padding-left: 1vw;
     font-family: 'Montserrat-Regular';
     background-color: #f1f1f1;
     /* font-size: 15px; */
@@ -19,7 +16,6 @@ body {
 
 .logo {
     padding: 1vw 0;
-    /* background-color: #777; */
 }
 
 .logo a {
@@ -30,7 +26,6 @@ body {
 .logo a {
     font-family: 'Montserrat-SemiBold';
     text-transform: uppercase;
-    /* background-color: orange; */
 }
 
 .logo_img {
@@ -45,17 +40,11 @@ body {
     color: #f70209;
 }
 
-.header_nav {
-    /* background-color: #999; */
-}
-
 .header_nav_list {
-    /* padding: 0.9vw 0; */
     padding: 1.5vw 0;
     display: flex;
     justify-content: space-around;
     font-family: 'Montserrat-SemiBold';
-    /* background-color: aqua; */
 }
 
 /* Главный контент */
@@ -71,8 +60,6 @@ body {
     max-width: 95%;
     width: 100%;
     margin: 0 auto;
-    /* position: relative;
-    z-index: 5; */
 }
 
 .main_title {
@@ -102,21 +89,13 @@ body {
     /* font-size: 17px; */
     font-family: 'Montserrat-SemiBold';
     font-size: calc(9px + 8 * (100vw - 320px) / 1600);
-    /* background-color: red; */
 }
 
 .section_title::after {
     content: '';
-    /* делаем линию строчно-блочной */
     display: inline-block;
-    /* выравниваем вертикально по середине */
     vertical-align: middle;
-    /* установка ширины в 100% делает линию равной ширине тега заголовка
-	** благодаря этому линия заполнит все свободное пространство
-	** слева и справа от текста
-	*/
     width: 100%;
-    /* height: 0.15vw; */
     height: 1.5px;
     background-color: #000000;
     border-width: 0 1vw;
@@ -124,9 +103,6 @@ body {
 }
 
 .section_title:after {
-    /* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
-	** благодаря этому линия встает справа от текста
-	*/
     margin-right: -100%;
 }
 
@@ -147,11 +123,7 @@ body {
     background-color: #f1f1f1;
 }
 
-.block_checkbox input[type='checkbox'] {
-}
-
 .labl_checkbox {
-    /* width: max-content; */
     padding: 0.8vw;
     display: flex;
     align-items: center;
@@ -191,9 +163,6 @@ body {
 
 /* Секция "Параметры объекта 1" */
 
-.section.object_parameters {
-}
-
 .section.object_parameters .section_title {
     padding: 1vw 0;
 }
@@ -225,23 +194,14 @@ body {
 }
 
 .filter_switch_item {
-    /* padding: 1vw 1.5vw; */
     padding: 0.8vw 1.3vw;
     text-align: center;
     border-radius: 1vw;
     white-space: nowrap;
-    /* background-color: #f1f1f1; */
 }
-
-/* .list_filters.appointment li:nth-child(1) {
-    background-color: red;
-} */
 
 .filter_switch_item.active {
     background-color: #f1f1f1;
-}
-
-.filter_switch_labl {
 }
 
 .filter_switch_item input {
@@ -261,7 +221,6 @@ body {
 }
 
 .tooltip_text {
-    /* width: 280px; */
     width: 20vw;
     padding: 1vw;
     display: none;
@@ -273,9 +232,7 @@ body {
     border-radius: 1vw;
     line-height: 1.8vw;
     font-size: calc(10px + 5 * (100vw - 320px) / 1600);
-    /* opacity: 0; */
     z-index: 8;
-    /* transition: opacity 0.3s; */
 }
 
 .tooltip_text::before {
@@ -306,23 +263,14 @@ body {
 }
 
 .section_column.object_parameters_2 {
-    /* max-width: 90%;
-    width: 100%; */
     display: grid;
-    /* grid-auto-columns: minmax(0, 1fr);
-    grid-auto-flow: column; */
     grid-template-columns: repeat(3, 1fr);
-    /* grid-auto-rows: 1fr; */
-    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
     column-gap: 3vw;
 }
 
 .section_column.object_parameters_2 .section_column p {
     font-family: 'Montserrat-SemiBold';
     margin-bottom: 1.5vw;
-    /* max-width: 315px;
-    width: 100%;
-    word-wrap: break-word; */
 }
 
 .section_column_content {
@@ -333,7 +281,6 @@ body {
 
 .section_column_content > * {
     width: 100%;
-    /* margin-top: 2vw; */
 }
 
 /* Секция "Дополнительные факторы" */
@@ -342,10 +289,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5vw;
-}
-
-.section_column.additional_factors > * {
-    /* overflow: hidden; */
 }
 
 .section_column.additional_factors .section_top .section_column:first-child {
@@ -464,10 +407,6 @@ body {
 
 .footer_left {
     padding: 2vw;
-    /* background-color: aquamarine; */
-}
-
-.footer_left_content {
 }
 
 .list_inpt_data > * {
@@ -507,7 +446,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: orange; */
 }
 
 .footer_right_content > * {
@@ -538,7 +476,6 @@ body {
 }
 
 .dropdown_menu {
-    /* display: block; */
     position: relative;
     z-index: 3;
 }
@@ -547,19 +484,16 @@ body {
     padding: 0.8vw 2.5vw;
     border-radius: 1.5vw;
     background-color: #ffffff;
-    /* background-color: green; */
 }
 
 .ic_btn {
     margin-left: 0.3vw;
 }
-/* Добавить тень */
+
 .sub_menu {
     width: 100%;
-    /* display: flex; */
     display: none;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     row-gap: 1vw;
     padding: 4vw 0 1vw 0;
