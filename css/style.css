@@ -265,21 +265,32 @@ body {
 .section_column.object_parameters_2 {
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-rows: repeat(17, 1fr);
+    grid-template-rows: repeat(17, max-content);
     grid-auto-rows: 1fr;
+    /* column-gap: 3vw; */
+    gap: 1.5vw 3vw;
+}
+
+/* .section_column.object_parameters_2 > .section_row label:nth-child(1) {
+    background-color: green;
+} */
+
+.section_row_titles {
+    display: flex;
     column-gap: 3vw;
 }
 
-.section_column.object_parameters_2 .section_column p {
-    font-family: 'Montserrat-SemiBold';
-    margin-bottom: 1.5vw;
+.section_row_titles > * {
+    flex-basis: 100%;
 }
 
-/* .section_column_content {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1vw;
-} */
+.section_column.object_parameters_2 .section_row > * {
+    align-self: start;
+}
+
+.section_row_titles {
+    font-family: 'Montserrat-SemiBold';
+}
 
 .section_column_content > * {
     width: 100%;

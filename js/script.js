@@ -15,14 +15,24 @@ const filters_seismicity_area = document.querySelectorAll('.seismicity_area > *'
 // Фильтры 'Цеха с агрессивным воздействием окружающей среды'
 const filters_aggressiveness = document.querySelectorAll('.aggressiveness > *');
 
-//
-const building_structures = document.querySelectorAll('.building_structures > * input[type="checkbox"]');
+// Массив чекбоксов внутри столбца 'Обследование строительных конструкций'
+// const building_structures = document.querySelectorAll('.building_structures > * input[type="checkbox"]');
+const building_structures = document.querySelectorAll(
+    '.section_column.object_parameters_2 > .section_row label:nth-child(1) input'
+);
 const cb_select_all_1 = building_structures[0];
-//
-const measuring_works = document.querySelectorAll('.measuring_works > * input[type="checkbox"]');
+
+// Массив чекбоксов внутри столбца 'Обмерные работы строительных конструкций'
+// const measuring_works = document.querySelectorAll('.measuring_works > * input[type="checkbox"]');
+const measuring_works = document.querySelectorAll(
+    '.section_column.object_parameters_2 > .section_row label:nth-child(2) input'
+);
+
 const cb_select_all_2 = measuring_works[0];
-//
-const engineering_systems = document.querySelectorAll('.engineering_systems > * input[type=checkbox]');
+// Массив чекбоксов внутри столбца 'Обследование инженерных систем'
+const engineering_systems = document.querySelectorAll(
+    '.section_column.object_parameters_2 > .section_row label:nth-child(3) input'
+);
 const cb_select_all_3 = engineering_systems[0];
 
 // Кнопка 'Скачать смету'
@@ -85,7 +95,7 @@ filters_aggressiveness.forEach(function (item_list) {
     });
 });
 
-//
+// Чекбокс для выбора всех элементов в столбце 'Обследование строительных конструкций'
 cb_select_all_1.addEventListener('change', () => {
     if (cb_select_all_1.checked == true) {
         building_structures.forEach(function (checkbox) {
@@ -98,7 +108,7 @@ cb_select_all_1.addEventListener('change', () => {
     }
 });
 
-//
+// Чекбокс для выбора всех элементов в столбце 'Обмерные работы строительных конструкций'
 cb_select_all_2.addEventListener('change', () => {
     if (cb_select_all_2.checked == true) {
         measuring_works.forEach(function (checkbox) {
@@ -111,7 +121,7 @@ cb_select_all_2.addEventListener('change', () => {
     }
 });
 
-//
+// Чекбокс для выбора всех элементов в столбце 'Обследование инженерных систем'
 cb_select_all_3.addEventListener('change', () => {
     if (cb_select_all_3.checked == true) {
         engineering_systems.forEach(function (checkbox) {
@@ -126,7 +136,7 @@ cb_select_all_3.addEventListener('change', () => {
 
 building_structures.forEach(function (checkbox) {
     if (checkbox != cb_select_all_1) {
-        checkbox.addEventListener('change', function (e) {
+        checkbox.addEventListener('change', () => {
             cb_select_all_1.checked = false;
         });
     }
@@ -134,7 +144,7 @@ building_structures.forEach(function (checkbox) {
 
 measuring_works.forEach(function (checkbox) {
     if (checkbox != cb_select_all_2) {
-        checkbox.addEventListener('change', function (e) {
+        checkbox.addEventListener('change', () => {
             cb_select_all_2.checked = false;
         });
     }
@@ -142,7 +152,7 @@ measuring_works.forEach(function (checkbox) {
 
 engineering_systems.forEach(function (checkbox) {
     if (checkbox != cb_select_all_3) {
-        checkbox.addEventListener('change', function (e) {
+        checkbox.addEventListener('change', () => {
             cb_select_all_3.checked = false;
         });
     }
