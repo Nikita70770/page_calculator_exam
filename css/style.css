@@ -18,6 +18,7 @@ body {
 }
 
 .logo {
+    padding: 1vw 0;
     /* background-color: #777; */
 }
 
@@ -49,7 +50,8 @@ body {
 }
 
 .header_nav_list {
-    padding: 0.9vw 0;
+    /* padding: 0.9vw 0; */
+    padding: 1.5vw 0;
     display: flex;
     justify-content: space-around;
     font-family: 'Montserrat-SemiBold';
@@ -69,6 +71,8 @@ body {
     max-width: 95%;
     width: 100%;
     margin: 0 auto;
+    /* position: relative;
+    z-index: 5; */
 }
 
 .main_title {
@@ -185,11 +189,10 @@ body {
     background-color: #666666;
 }
 
-.question_mark {
-    margin-left: 0.5vw;
-}
-
 /* Секция "Параметры объекта 1" */
+
+.section.object_parameters {
+}
 
 .section.object_parameters .section_title {
     padding: 1vw 0;
@@ -227,6 +230,14 @@ body {
     text-align: center;
     border-radius: 1vw;
     white-space: nowrap;
+    /* background-color: #f1f1f1; */
+}
+
+/* .list_filters.appointment li:nth-child(1) {
+    background-color: red;
+} */
+
+.filter_switch_item.active {
     background-color: #f1f1f1;
 }
 
@@ -237,7 +248,62 @@ body {
     display: none;
 }
 
+.question_mark {
+    width: 100%;
+    margin-left: 0.5vw;
+    position: relative;
+    z-index: 5;
+}
+
+.img_question_mark:hover + .tooltip_text {
+    display: block;
+    opacity: 1;
+}
+
+.tooltip_text {
+    /* width: 280px; */
+    width: 20vw;
+    padding: 1vw;
+    display: none;
+    position: absolute;
+    bottom: 380%;
+    left: -200%;
+    box-shadow: 0 0 0.5vw #999999;
+    background-color: #ffffff;
+    border-radius: 1vw;
+    line-height: 1.8vw;
+    font-size: calc(10px + 5 * (100vw - 320px) / 1600);
+    /* opacity: 0; */
+    z-index: 8;
+    /* transition: opacity 0.3s; */
+}
+
+.tooltip_text::before {
+    content: '';
+    position: absolute;
+    top: 100.25%;
+    left: 12%;
+    border-top: 2.5vw solid #ffffff;
+    border-right: 3.5vw solid transparent;
+    z-index: 3;
+}
+
+.tooltip_text::after {
+    content: '';
+    position: absolute;
+    top: 101%;
+    left: 11%;
+    border-top: 3vw solid #d0d0d0;
+    border-right: 4vw solid transparent;
+    filter: blur(0.3vw);
+    z-index: 1;
+}
+
 /* Секция "Параметры объекта 2" */
+
+.section.additional_factors .section_title {
+    padding: 1vw 0;
+}
 
 .section_column.object_parameters_2 {
     /* max-width: 90%;
@@ -391,7 +457,7 @@ body {
 
 /* Подвал */
 
-.footer {
+.footer_top {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -471,6 +537,12 @@ body {
     font-size: calc(18px + 17 * (100vw - 320px) / 1600);
 }
 
+.dropdown_menu {
+    /* display: block; */
+    position: relative;
+    z-index: 3;
+}
+
 .btn_download_estimate {
     padding: 0.8vw 2.5vw;
     border-radius: 1.5vw;
@@ -480,4 +552,31 @@ body {
 
 .ic_btn {
     margin-left: 0.3vw;
+}
+/* Добавить тень */
+.sub_menu {
+    width: 100%;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    row-gap: 1vw;
+    padding: 4vw 0 1vw 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1.5vw;
+    box-shadow: 0 0 0.4vw #999999;
+    background-color: #ffffff;
+    z-index: -1;
+}
+
+.sub_menu.show {
+    display: flex;
+}
+
+.footer_bottom {
+    padding-bottom: 8vw;
+    background-color: #ffffff;
 }

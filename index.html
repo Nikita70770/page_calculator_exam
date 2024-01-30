@@ -75,7 +75,11 @@
                                     <label
                                         >Строительный объем, м<sup><small>3</small></sup>
                                         <sup class="question_mark">
-                                            <img src="/img/question_mark.svg" />
+                                            <img class="img_question_mark" src="/img/question_mark.svg" />
+                                            <span class="tooltip_text"
+                                                >Строительный объем - lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit.
+                                            </span>
                                         </sup>
                                     </label>
                                     <input class="inpt_data" type="text" placeholder="0" />
@@ -84,97 +88,125 @@
                                     <label
                                         >Количество этажей
                                         <sup class="question_mark">
-                                            <img src="/img/question_mark.svg" />
+                                            <img class="img_question_mark" src="/img/question_mark.svg" />
+                                            <span class="tooltip_text"
+                                                >Количество этажей - lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit.
+                                            </span>
                                         </sup>
                                     </label>
                                     <input class="inpt_data" type="text" placeholder="0" />
                                 </div>
                                 <div class="section_row">
-                                    <label>Назначение </label>
-                                    <ul class="list_filters">
-                                        <li class="filter_switch_item">
-                                            <input type="checkbox" id="checkbox_elem" checked />
-                                            <label for="checkbox_elem" class="filter_switch_labl"> Гражданское </label>
+                                    <label>Назначение</label>
+                                    <ul class="list_filters appointment">
+                                        <li class="filter_switch_item active">
+                                            <input type="checkbox" value="Гражданское" id="cb_civil" checked />
+                                            <label for="cb_civil" class="filter_switch_labl"> Гражданское </label>
                                         </li>
                                         <li class="filter_switch_item">
-                                            <input type="checkbox" id="checkbox_elem" />
-                                            <label for="checkbox_elem" class="filter_switch_labl"> Промышленное </label>
+                                            <input type="checkbox" value="Промышленное" id="cb_industrial" />
+                                            <label for="cb_industrial" class="filter_switch_labl"> Промышленное </label>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="section_row">
                                     <label
                                         >Конструктивная схема
-                                        <sup class="question_mark"><img src="/img/question_mark.svg" /></sup>
+                                        <sup class="question_mark">
+                                            <img class="img_question_mark" src="/img/question_mark.svg" />
+                                            <span class="tooltip_text"
+                                                >Конструктивная схема - lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit.
+                                            </span>
+                                        </sup>
                                     </label>
-                                    <ul class="list_filters">
-                                        <li class="filter_switch_item">
-                                            <input type="checkbox" id="checkbox_elem" checked />
-                                            <label for="checkbox_elem" class="filter_switch_labl"> Каркасная </label>
+                                    <ul class="list_filters design_scheme">
+                                        <li class="filter_switch_item active">
+                                            <input type="checkbox" id="cb_frame" value="Каркасная" checked />
+                                            <label for="cb_frame" class="filter_switch_labl"> Каркасная </label>
                                         </li>
                                         <li class="filter_switch_item">
-                                            <input type="checkbox" id="checkbox_elem" />
-                                            <label for="checkbox_elem" class="filter_switch_labl"> Стеновая </label>
+                                            <input type="checkbox" id="cb_wall" value="Стеновая" />
+                                            <label for="cb_wall" class="filter_switch_labl"> Стеновая </label>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="section_row">
                                     <label
                                         >Категория сложности объекта
-                                        <sup class="question_mark"><img src="/img/question_mark.svg" /></sup>
+                                        <sup class="question_mark">
+                                            <img class="img_question_mark" src="/img/question_mark.svg" />
+                                            <span class="tooltip_text"
+                                                >Категория сложности объекта - lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit.
+                                            </span>
+                                        </sup>
                                     </label>
-                                    <ul class="list_filters">
-                                        <li class="filter_switch_item">
-                                            <input type="checkbox" id="checkbox_elem" checked />
-                                            <label for="checkbox_elem" class="filter_switch_labl"> I </label>
+                                    <ul class="list_filters complexity_obj">
+                                        <li class="filter_switch_item active">
+                                            <input type="checkbox" id="cb_complexity_obj_1" value="I" checked />
+                                            <label for="cb_complexity_obj_1" class="filter_switch_labl"> I </label>
                                         </li>
                                         <li class="filter_switch_item">
-                                            <input type="checkbox" id="checkbox_elem" checked />
-                                            <label for="checkbox_elem" class="filter_switch_labl"> II </label>
+                                            <input type="checkbox" id="cb_complexity_obj_2" value="II" />
+                                            <label for="cb_complexity_obj_2" class="filter_switch_labl"> II </label>
                                         </li>
                                         <li class="filter_switch_item">
-                                            <input type="checkbox" id="checkbox_elem" checked />
-                                            <label for="checkbox_elem" class="filter_switch_labl"> III </label>
+                                            <input type="checkbox" id="cb_complexity_obj_3" value="III" />
+                                            <label for="cb_complexity_obj_3" class="filter_switch_labl"> III </label>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="section_row">
                                     <label
                                         >Категория сложности обследования
-                                        <sup class="question_mark"><img src="/img/question_mark.svg" /></sup>
+                                        <sup class="question_mark">
+                                            <img class="img_question_mark" src="/img/question_mark.svg" />
+                                            <span class="tooltip_text"
+                                                >Категория сложности обследования - lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                            </span>
+                                        </sup>
                                     </label>
-                                    <ul class="list_filters">
-                                        <li class="filter_switch_item">
-                                            <input type="checkbox" id="checkbox_elem" checked />
-                                            <label for="checkbox_elem" class="filter_switch_labl"> I </label>
+                                    <ul class="list_filters complexity_survey">
+                                        <li class="filter_switch_item active">
+                                            <input type="checkbox" id="cb_complexity_survey_1" value="I" checked />
+                                            <label for="cb_complexity_survey_1" class="filter_switch_labl"> I </label>
                                         </li>
                                         <li class="filter_switch_item">
-                                            <input type="checkbox" id="checkbox_elem" checked />
-                                            <label for="checkbox_elem" class="filter_switch_labl"> II </label>
+                                            <input type="checkbox" id="cb_complexity_survey_2" value="II" />
+                                            <label for="cb_complexity_survey_2" class="filter_switch_labl"> II </label>
                                         </li>
                                         <li class="filter_switch_item">
-                                            <input type="checkbox" id="checkbox_elem" checked />
-                                            <label for="checkbox_elem" class="filter_switch_labl"> III </label>
+                                            <input type="checkbox" id="cb_complexity_survey_3" value="III" />
+                                            <label for="cb_complexity_survey_3" class="filter_switch_labl"> III </label>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="section_row">
                                     <label
                                         >Категория сложности обмерных работ
-                                        <sup class="question_mark"><img src="/img/question_mark.svg" /></sup>
+                                        <sup class="question_mark">
+                                            <img class="img_question_mark" src="/img/question_mark.svg" />
+                                            <span class="tooltip_text"
+                                                >Категория сложности обмерных работ - lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                            </span>
+                                        </sup>
                                     </label>
-                                    <ul class="list_filters">
-                                        <li class="filter_switch_item">
-                                            <input type="checkbox" id="checkbox_elem" checked />
-                                            <label for="checkbox_elem" class="filter_switch_labl"> I </label>
+                                    <ul class="list_filters complexity_works">
+                                        <li class="filter_switch_item active">
+                                            <input type="checkbox" id="cb_complexity_works_1" value="I" checked />
+                                            <label for="cb_complexity_works_1" class="filter_switch_labl"> I </label>
                                         </li>
                                         <li class="filter_switch_item">
-                                            <input type="checkbox" id="checkbox_elem" checked />
-                                            <label for="checkbox_elem" class="filter_switch_labl"> II </label>
+                                            <input type="checkbox" id="cb_complexity_works_2" value="II" />
+                                            <label for="cb_complexity_works_2" class="filter_switch_labl"> II </label>
                                         </li>
                                         <li class="filter_switch_item">
-                                            <input type="checkbox" id="checkbox_elem" checked />
-                                            <label for="checkbox_elem" class="filter_switch_labl"> III </label>
+                                            <input type="checkbox" id="cb_complexity_works_3" value="III" />
+                                            <label for="cb_complexity_works_3" class="filter_switch_labl"> III </label>
                                         </li>
                                     </ul>
                                 </div>
@@ -186,7 +218,7 @@
                             <div class="section_column object_parameters_2">
                                 <div class="section_column">
                                     <p>Обследование строительных конструкций</p>
-                                    <div class="section_column_content">
+                                    <div class="section_column_content building_structures">
                                         <label class="labl_checkbox">
                                             <input type="checkbox" class="hidden_checkbox" />
                                             <div class="checkbox">
@@ -275,7 +307,7 @@
                                 </div>
                                 <div class="section_column">
                                     <p>Обмерные работы строительных конструкций</p>
-                                    <div class="section_column_content">
+                                    <div class="section_column_content measuring_works">
                                         <label class="labl_checkbox">
                                             <input type="checkbox" class="hidden_checkbox" />
                                             <div class="checkbox">
@@ -390,14 +422,14 @@
                                         </label>
                                         <div class="block_filters">
                                             <label>Имеются ли исходные чертежи?</label>
-                                            <ul class="list_filters" style="margin-top: 1vw">
-                                                <li class="filter_switch_item">
-                                                    <input type="checkbox" id="checkbox_elem" checked />
-                                                    <label for="checkbox_elem" class="filter_switch_labl"> Да </label>
+                                            <ul class="list_filters original_drawings" style="margin-top: 1vw">
+                                                <li class="filter_switch_item active">
+                                                    <input type="checkbox" id="cb_drawings_1" value="Да" checked />
+                                                    <label for="cb_drawings_1" class="filter_switch_labl"> Да </label>
                                                 </li>
                                                 <li class="filter_switch_item">
-                                                    <input type="checkbox" id="checkbox_elem" checked />
-                                                    <label for="checkbox_elem" class="filter_switch_labl"> Нет </label>
+                                                    <input type="checkbox" id="cb_drawings_2" value="Нет" />
+                                                    <label for="cb_drawings_2" class="filter_switch_labl"> Нет </label>
                                                 </li>
                                             </ul>
                                         </div>
@@ -405,7 +437,7 @@
                                 </div>
                                 <div class="section_column">
                                     <p>Обследование инженерных систем</p>
-                                    <div class="section_column_content">
+                                    <div class="section_column_content engineering_systems">
                                         <label class="labl_checkbox">
                                             <input type="checkbox" class="hidden_checkbox" />
                                             <div class="checkbox">
@@ -600,42 +632,50 @@
                                         </label>
                                     </div>
                                     <div class="section_column">
-                                        <ul class="list_filters">
-                                            <li class="filter_switch_item">
-                                                <input type="checkbox" id="checkbox_elem" />
-                                                <label for="checkbox_elem" class="filter_switch_labl">< 7 баллов</label>
+                                        <ul class="list_filters seismicity_area">
+                                            <li class="filter_switch_item active">
+                                                <input type="checkbox" id="cb_seismicity_1" />
+                                                <label for="cb_seismicity_1" class="filter_switch_labl"
+                                                    >< 7 баллов</label
+                                                >
                                             </li>
                                             <li class="filter_switch_item">
-                                                <input type="checkbox" id="checkbox_elem" />
-                                                <label for="checkbox_elem" class="filter_switch_labl">7 баллов</label>
+                                                <input type="checkbox" id="cb_seismicity_2" />
+                                                <label for="cb_seismicity_2" class="filter_switch_labl">7 баллов</label>
                                             </li>
                                             <li class="filter_switch_item">
-                                                <input type="checkbox" id="checkbox_elem" />
-                                                <label for="checkbox_elem" class="filter_switch_labl">8 баллов</label>
+                                                <input type="checkbox" id="cb_seismicity_3" />
+                                                <label for="cb_seismicity_3" class="filter_switch_labl">8 баллов</label>
                                             </li>
                                             <li class="filter_switch_item">
-                                                <input type="checkbox" id="checkbox_elem" />
-                                                <label for="checkbox_elem" class="filter_switch_labl">9 баллов</label>
+                                                <input type="checkbox" id="cb_seismicity_4" />
+                                                <label for="cb_seismicity_4" class="filter_switch_labl">9 баллов</label>
                                             </li>
                                         </ul>
-                                        <ul class="list_filters">
-                                            <li class="filter_switch_item">
-                                                <input type="checkbox" id="checkbox_elem" />
-                                                <label for="checkbox_elem" class="filter_switch_labl"
+                                        <ul class="list_filters aggressiveness">
+                                            <li class="filter_switch_item active">
+                                                <input type="checkbox" id="cb_aggressiveness_1" />
+                                                <label for="cb_aggressiveness_1" class="filter_switch_labl"
                                                     >отсутствует</label
                                                 >
                                             </li>
                                             <li class="filter_switch_item">
-                                                <input type="checkbox" id="checkbox_elem" />
-                                                <label for="checkbox_elem" class="filter_switch_labl">слабая</label>
+                                                <input type="checkbox" id="cb_aggressiveness_2" />
+                                                <label for="cb_aggressiveness_2" class="filter_switch_labl"
+                                                    >слабая</label
+                                                >
                                             </li>
                                             <li class="filter_switch_item">
-                                                <input type="checkbox" id="checkbox_elem" />
-                                                <label for="checkbox_elem" class="filter_switch_labl">средняя</label>
+                                                <input type="checkbox" id="cb_aggressiveness_3" />
+                                                <label for="cb_aggressiveness_3" class="filter_switch_labl"
+                                                    >средняя</label
+                                                >
                                             </li>
                                             <li class="filter_switch_item">
-                                                <input type="checkbox" id="checkbox_elem" />
-                                                <label for="checkbox_elem" class="filter_switch_labl">сильная</label>
+                                                <input type="checkbox" id="cb_aggressiveness_4" />
+                                                <label for="cb_aggressiveness_4" class="filter_switch_labl"
+                                                    >сильная</label
+                                                >
                                             </li>
                                         </ul>
                                     </div>
@@ -836,49 +876,60 @@
                 </main>
                 <!-- Подвал -->
                 <footer class="footer">
-                    <div class="footer_left">
-                        <div class="footer_left_content">
-                            <ul class="list_inpt_data">
-                                <li>
-                                    <label for="">Стоимость обследования строительных конструкций</label
-                                    ><input type="text" class="inpt_data" placeholder="180 500 Р" />
-                                </li>
-                                <li>
-                                    <label for="">Стоимость обмерных работ</label
-                                    ><input type="text" class="inpt_data" placeholder="180 500 Р" />
-                                </li>
-                                <li>
-                                    <label for="">Стоимость обследования инженерных систем</label
-                                    ><input type="text" class="inpt_data" placeholder="180 500 Р" />
-                                </li>
-                                <li>
-                                    <label for="">Стоимость инструментальных испытаний</label
-                                    ><input type="text" class="inpt_data" placeholder="180 500 Р" />
-                                </li>
-                                <li>
-                                    <label for="">Стоимость дополнительных расходов</label
-                                    ><input type="text" class="inpt_data" placeholder="180 500 Р" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer_right">
-                        <div class="footer_right_content">
-                            <div class="footer_right_title">
-                                <div class="footer_row_title">
-                                    <h2 class="footer_subtitle">Общая стоимость</h2>
-                                    <img src="/img/ic_copy.svg" alt="Copy" />
-                                </div>
-                                <h3 class="footer_main_title">180 500 Р</h3>
+                    <div class="footer_top">
+                        <div class="footer_left">
+                            <div class="footer_left_content">
+                                <ul class="list_inpt_data">
+                                    <li>
+                                        <label for="">Стоимость обследования строительных конструкций</label
+                                        ><input type="text" class="inpt_data" placeholder="180 500 Р" />
+                                    </li>
+                                    <li>
+                                        <label for="">Стоимость обмерных работ</label
+                                        ><input type="text" class="inpt_data" placeholder="180 500 Р" />
+                                    </li>
+                                    <li>
+                                        <label for="">Стоимость обследования инженерных систем</label
+                                        ><input type="text" class="inpt_data" placeholder="180 500 Р" />
+                                    </li>
+                                    <li>
+                                        <label for="">Стоимость инструментальных испытаний</label
+                                        ><input type="text" class="inpt_data" placeholder="180 500 Р" />
+                                    </li>
+                                    <li>
+                                        <label for="">Стоимость дополнительных расходов</label
+                                        ><input type="text" class="inpt_data" placeholder="180 500 Р" />
+                                    </li>
+                                </ul>
                             </div>
-                            <button class="btn_download_estimate">
-                                Скачать смету
-                                <img class="ic_btn" src="/img/arrow_down.svg" alt="" />
-                            </button>
+                        </div>
+                        <div class="footer_right">
+                            <div class="footer_right_content">
+                                <div class="footer_right_title">
+                                    <div class="footer_row_title">
+                                        <h2 class="footer_subtitle">Общая стоимость</h2>
+                                        <img src="/img/ic_copy.svg" alt="Copy" />
+                                    </div>
+                                    <h3 class="footer_main_title">180 500 Р</h3>
+                                </div>
+                                <div class="dropdown_menu">
+                                    <button class="btn_download_estimate">
+                                        Скачать смету
+                                        <img class="ic_btn" src="/img/arrow_down.svg" alt="" />
+                                    </button>
+                                    <ul class="sub_menu">
+                                        <li>Pdf</li>
+                                        <li>Word</li>
+                                        <li>Excel</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="footer_bottom"></div>
                 </footer>
             </div>
         </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
