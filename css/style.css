@@ -426,20 +426,23 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 2vw;
+    column-gap: 3vw;
 }
 
 .list_inpt_data > *:not(:last-child) {
     margin-bottom: 1vw;
 }
 
-.list_inpt_data li label {
-    color: #000000;
+.list_inpt_data li p {
+    max-width: 195px;
+    width: 100%;
 }
 
-.list_inpt_data li .inpt_data {
+.list_inpt_data li p {
+    padding: 1vw;
+    border-radius: 1vw;
     font-family: 'Montserrat-SemiBold';
-    color: #000000;
+    /* color: #000000; */
     background-color: #ffffff;
 }
 
