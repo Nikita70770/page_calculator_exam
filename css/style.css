@@ -316,6 +316,7 @@ body {
 }
 
 .section_column.additional_factors .section_top .section_column:last-child {
+    width: max-content;
     display: grid;
     align-items: center;
     grid-auto-rows: 1fr;
@@ -354,7 +355,6 @@ body {
 .section_column.additional_factors .section_bottom .list_inpt_data > * {
     margin-top: 1vw;
     display: flex;
-    justify-content: space-between;
     column-gap: 5vw;
 }
 
