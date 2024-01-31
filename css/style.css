@@ -433,9 +433,12 @@ body {
     margin-bottom: 1vw;
 }
 
+.list_inpt_data li h2 {
+    flex: 2;
+}
+
 .list_inpt_data li p {
-    max-width: 195px;
-    width: 100%;
+    flex: 1;
 }
 
 .list_inpt_data li p {
